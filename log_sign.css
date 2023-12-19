@@ -1,0 +1,25 @@
+*{
+    background-color:#FFC0D9;
+}
+fieldset{
+border: 2px solid black;
+width: 30%;
+}
+#bot,#but{
+text-decoration: none;
+}
+a:hover{
+    background-color:#f2ff00;
+}
+#head{
+    border: 5px outset red;
+    background-color: lightblue;    
+    text-align: center;
+    width: 30%;
+    height: 40px;
+    padding-top: 18px;
+}
+#but{
+    border:3px solid black ;
+    font-family: cursive;
+}

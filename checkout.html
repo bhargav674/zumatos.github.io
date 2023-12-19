@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order your food</title>
+    <link rel="icon" href="zoicon.ico" >
+    <style>
+        #f1{
+            background-color: #9AD0C2;
+        }
+        #f2{
+            background-color: #E48F45;
+        }
+        #f3{
+            background-color: #9BB8CD;
+        }
+    </style>
+</head>
+<body style="background-color: #FFE382;">
+    <a href="biryani.html"><button>Back</button></a>
+    <MARquee behaviour="alternate" direction="right"><h1>ORDER YOUR FIRST ITEM</h1></MARquee>
+    <CENter>
+        <form action="">
+            <fieldset id="f1">
+                <legend><pre><big><b>1.Order_Details</b></big></pre></legend>
+                <img src="order.png" alt="your order"><br>
+                <label for="qnt">Quantity</label><input type="number" id="qnt" placeholder="1 Increase Quantity"><br><br>
+                <input type="text" id="coupon" placeholder="Enter coupon code"><label for="coupon">&nbsp;&nbsp;&nbsp;<button>Apply Coupon</button></label>
+                <h2><mark>50% Off&nbsp;&nbsp;</mark>&nbsp;&nbsp;₹315&nbsp;&nbsp;<s>₹630</s>  </h2>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset id="f2">
+                <legend><pre><big><b>2.Delivery Address</b></big></pre></legend>
+                <label for="name">Enter Name : </label><input type="text" id="name" placeholder="Abc" required><br><br>
+                <label for="mobile">Mobile No. : </label><input type="text" id="mobile" placeholder="1234567890" pattern="[6-9]{1}[0-9]{9}" required><br><br>
+                <label for="mobil">Alt Mobile : </label><input type="text" id="mobil" placeholder="1234567890" pattern="[6-9]{1}[0-9]{9}" required><br><br>
+                <label for="mobile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Address : </label><input type="text" placeholder="Door no./ Street" required><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="Town/Locality"><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="State"><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="pincode">Pincode : </label><input type="text" id="pincode" pattern="[0-9]{6}" required><br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label for="country">Country : </label><input type="text" value="INDIA"><br><br>
+                <button>Save Address</button>
+            </fieldset>
+        </form>
+        <form action="final.html">
+            <fieldset id="f3">
+                <legend><pre><big><b>3.Payment Section</b></big></pre></legend>
+                <b><p><big><u>Select a Payment Method</u></big></p></b>
+                <input type="radio" id="credit" name="pay"><label for="credit">Credit Card</label>&nbsp;&nbsp;<button id="credit">Add New Card</button><br><br>
+                <input type="radio" id="debit" name="pay"><label for="debit">Debit Card</label>&nbsp;&nbsp;<button id="debit">Add New Card</button><br><br>
+                <input type="radio" id="net" name="pay"><label for="net">Net Banking</label>&nbsp;&nbsp;
+                <input list="bank">
+                <datalist id="bank">
+                    <option>Airtel Payment Bank</option>
+                    <option>SBI</option>
+                    <option>HDFC</option>
+                    <option>Union Bank</option>
+                    <option>Canara</option>
+                    <option>Federal Bank</option>
+                    <option>ICICI Bank</option>
+                </datalist><br><br>
+                <input type="radio" id="other" name="pay"><label for="other" name="pay">Other UPI Apps</label>&nbsp;&nbsp;<input type="text" placeholder="Enter UPI Id">&nbsp;&nbsp;<button>Verify</button><br><br>
+                <input type="radio" id="cod"><label for="cod" name="pay">Cash on Delivery / Pay on Delivery</label><br>
+                <small>Cash, UPI and Cards accepted.</small><br><br>
+                <button>Make Payment</button>
+            </fieldset>
+        </form>
+    </CENter>
+    <center>
+        <form action="final.html">
+
+        </form>
+    </center>
+</body>
+</html>

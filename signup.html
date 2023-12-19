@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create your Zomato Account</title>
+    <link rel="stylesheet" href="log_sign.css">
+    <link rel="icon" href="zoicon.ico" >
+</head>
+<body>
+    <center>
+        <marquee behavior="" direction="left"><h2>CREATE YOUR ZOMATO ACCOUNT</h2></marquee>
+    <h2 id="head">SIGN UP</h2>
+    <form action="home.html">
+        <fieldset>
+            <legend><b><big>personal details</big></b></legend>
+
+            <img src="prof.png" height="100px" width="100px" alt="upload"><br><br>
+            <label for="uprofile">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Upload your Photo : </label>
+            <input type="file" id="uprofile"><br><br>
+            
+            <label for="uname">Enter your Name : </label>
+            <input type="text" id="uname" pattern="[A-za-z]{3-20}"   placeholder="Full Name" required><br><br>
+            <label for="gender" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   Gender : </label>
+            <input type="radio" id="m" name="gender" required>
+            <label for="m">Male</label>
+            <input type="radio" id="fm" name="gender" required>
+            <label for="fm">Female</label><br><br>
+            <label for="uemail">Enter your Email : </label>
+            <input type="email" placeholder="Email Address" id="uemail" required><br><br>
+            <label for="password">Create Password : </label>
+            <input type="password" name="" id="password"><br><br>
+
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to Zomato's Terms of Service, Privacy Policy and Content Policies</label><br><br>
+            <a href="index.html" id="but">CANCEL</a>&nbsp;&nbsp;<a href="home.html" id="but">CREATE</a>
+            <p>or</p>
+            <a href="" id="bot"><img src="google.png" height="12px" width="12px" alt="img">  Continue with Google</a><br>
+            <p>Already hava an Account? <a href="login.html" id="bot">login</a></p>
+        </fieldset>
+    </form>
+    </center>
+</body>
+</html>
